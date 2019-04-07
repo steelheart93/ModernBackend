@@ -1,0 +1,24 @@
+/**
+ * Hoja de Estilos utilizada en mi vídeo de YouTube, Introducción al Backend Moderno.
+ *
+ * @author Stiven Muñoz Murillo
+ * @version 06/04/2019
+ */
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    text-shadow: 1px 1px whitesmoke;
+    font-weight: bold;
+}
+
+#contenedor {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#pie {
+    position: fixed;
+    margin-top: 40vh;
+    width: 99%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
