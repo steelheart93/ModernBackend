@@ -39,11 +39,13 @@ function consultarFetch() {
     var promesaFetch1 = fetch('php/ControlOraclePLSQL.php', ajustesJSON);
 
     promesaFetch1.catch(function (error) {
+        alert("¡Error en promesaFetch1!");
         console.error(error);
     });
 
     var promesaFetch2 = promesaFetch1.then(function (respuesta) {
         console.log(respuesta);
+        console.log(respuesta.statusText);
 
         return respuesta.text();
     })
@@ -62,7 +64,7 @@ function consultarFetch() {
  */
 function rest() {
     // idx = 0, Imagen del Día de Hoy
-    var promesa = $.get("http://localhost/reproductor/php/main.php", { idx: 0 });
+    var promesa = $.get("php/API.php", { idx: 0 });
 
     promesa.done(function (callback) {
         var json = JSON.parse(callback);

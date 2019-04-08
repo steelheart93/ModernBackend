@@ -25,6 +25,9 @@ class ConexionMySQL
         return $this->conexion;
     }
 
+    /**
+     * Se ejecuta de forma automatica al terminar de usar un objeto de esta clase.
+     */
     public function __destruct()
     {
         mysqli_close($this->conexion);
